@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tasks>
+	<task id="85BEC77F-4186-4B42-BEC2-876523A348DA">
+		<Author>张三</Author>
+		<SubmitTime>20180916120000</SubmitTime>
+		<Priority>0</Priority>
+		<DueTime>20180916120000</DueTime>
+		<Assignee>张三</Assignee>
+		<Content>abcdefg</Content>
+		<HandlingNote>abcdefg</HandlingNote>
+		<Status>1</Status>
+		<Checker>张三</Checker>
+		<CheckTime>20180916120000</CheckTime>
+	</task>
+	<task id="95BEC77F-4186-4B42-BEC2-876523A348DA">
+		<Author>张三2</Author>
+		<SubmitTime>20180916120000</SubmitTime>
+		<Priority>0</Priority>
+		<DueTime>20180916120000</DueTime>
+		<Assignee>张三2</Assignee>
+		<Content>abcdefg</Content>
+		<HandlingNote>poiuasd</HandlingNote>
+		<Status>1</Status>
+		<Checker>张三2</Checker>
+		<CheckTime>20180916120000</CheckTime>
+	</task>
+</Tasks> 

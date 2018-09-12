@@ -97,7 +97,7 @@
 			this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-			this.開くOToolStripButton = new System.Windows.Forms.ToolStripButton();
+			this._toolStripButtonOpen = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -128,6 +128,8 @@
 			this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.导出到ExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStrip1.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
 			this.statusStrip1.SuspendLayout();
@@ -165,7 +167,6 @@
 			this.listView1.TabIndex = 3;
 			this.listView1.UseCompatibleStateImageBehavior = false;
 			this.listView1.View = System.Windows.Forms.View.Details;
-			this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
 			// 
 			// ColumnHeader
 			// 
@@ -232,7 +233,7 @@
 			// toolStrip1
 			// 
 			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.開くOToolStripButton,
+            this._toolStripButtonOpen,
             this.toolStripButton4,
             this.toolStripSeparator3,
             this.toolStripButton2,
@@ -252,14 +253,15 @@
 			this.toolStrip1.TabIndex = 4;
 			this.toolStrip1.Text = "toolStrip1";
 			// 
-			// 開くOToolStripButton
+			// _toolStripButtonOpen
 			// 
-			this.開くOToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.開くOToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("開くOToolStripButton.Image")));
-			this.開くOToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.開くOToolStripButton.Name = "開くOToolStripButton";
-			this.開くOToolStripButton.Size = new System.Drawing.Size(23, 22);
-			this.開くOToolStripButton.Text = "開く(&O)";
+			this._toolStripButtonOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this._toolStripButtonOpen.Image = ((System.Drawing.Image)(resources.GetObject("_toolStripButtonOpen.Image")));
+			this._toolStripButtonOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this._toolStripButtonOpen.Name = "_toolStripButtonOpen";
+			this._toolStripButtonOpen.Size = new System.Drawing.Size(23, 22);
+			this._toolStripButtonOpen.Text = "開く(&O)";
+			this._toolStripButtonOpen.Click += new System.EventHandler(this._toolStripButtonOpen_Click);
 			// 
 			// toolStripButton4
 			// 
@@ -327,28 +329,28 @@
 			// 
 			this.高ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("高ToolStripMenuItem.Image")));
 			this.高ToolStripMenuItem.Name = "高ToolStripMenuItem";
-			this.高ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.高ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
 			this.高ToolStripMenuItem.Text = "高";
 			// 
 			// 中ToolStripMenuItem
 			// 
 			this.中ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("中ToolStripMenuItem.Image")));
 			this.中ToolStripMenuItem.Name = "中ToolStripMenuItem";
-			this.中ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.中ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
 			this.中ToolStripMenuItem.Text = "中";
 			// 
 			// 一般ToolStripMenuItem
 			// 
 			this.一般ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("一般ToolStripMenuItem.Image")));
 			this.一般ToolStripMenuItem.Name = "一般ToolStripMenuItem";
-			this.一般ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.一般ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
 			this.一般ToolStripMenuItem.Text = "普通";
 			// 
 			// 低ToolStripMenuItem
 			// 
 			this.低ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("低ToolStripMenuItem.Image")));
 			this.低ToolStripMenuItem.Name = "低ToolStripMenuItem";
-			this.低ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.低ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
 			this.低ToolStripMenuItem.Text = "低";
 			// 
 			// toolStripButton3
@@ -417,6 +419,8 @@
 			this.文件FToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.打开OToolStripMenuItem,
             this.保存SToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.导出到ExcelToolStripMenuItem,
             this.toolStripSeparator2,
             this.退出XToolStripMenuItem});
 			this.文件FToolStripMenuItem.Name = "文件FToolStripMenuItem";
@@ -457,7 +461,7 @@
 			// 设定TToolStripMenuItem
 			// 
 			this.设定TToolStripMenuItem.Name = "设定TToolStripMenuItem";
-			this.设定TToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.设定TToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
 			this.设定TToolStripMenuItem.Text = "设定(&T)";
 			// 
 			// statusStrip1
@@ -512,6 +516,17 @@
 			this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
 			this.toolStripStatusLabel2.Size = new System.Drawing.Size(4, 22);
 			// 
+			// 导出到ExcelToolStripMenuItem
+			// 
+			this.导出到ExcelToolStripMenuItem.Name = "导出到ExcelToolStripMenuItem";
+			this.导出到ExcelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.导出到ExcelToolStripMenuItem.Text = "导出到Excel";
+			// 
+			// toolStripSeparator5
+			// 
+			this.toolStripSeparator5.Name = "toolStripSeparator5";
+			this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
+			// 
 			// FormTaskList
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -564,7 +579,7 @@
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-		private System.Windows.Forms.ToolStripButton 開くOToolStripButton;
+		private System.Windows.Forms.ToolStripButton _toolStripButtonOpen;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
 		private System.Windows.Forms.ColumnHeader columnHeader4;
@@ -584,6 +599,8 @@
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
 		private System.Windows.Forms.ToolStripMenuItem 编辑EToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem 设定TToolStripMenuItem;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+		private System.Windows.Forms.ToolStripMenuItem 导出到ExcelToolStripMenuItem;
 
 
 
