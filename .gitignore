@@ -1,0 +1,5 @@
+src/tpgui/obj/*
+src/tpgui/bin/Debug/tp.pdb
+src/tpgui/bin/Debug/tp.vshost.exe
+src/tpgui/bin/Debug/tp.vshost.exe.config
+tpgui.v11.suo
