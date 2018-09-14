@@ -119,6 +119,8 @@
 			this.文件FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.打开OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.保存SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+			this.导出到ExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.退出XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.编辑EToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -128,8 +130,6 @@
 			this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-			this.导出到ExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStrip1.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
 			this.statusStrip1.SuspendLayout();
@@ -430,24 +430,35 @@
 			// 打开OToolStripMenuItem
 			// 
 			this.打开OToolStripMenuItem.Name = "打开OToolStripMenuItem";
-			this.打开OToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.打开OToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
 			this.打开OToolStripMenuItem.Text = "打开(&O)";
 			// 
 			// 保存SToolStripMenuItem
 			// 
 			this.保存SToolStripMenuItem.Name = "保存SToolStripMenuItem";
-			this.保存SToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.保存SToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
 			this.保存SToolStripMenuItem.Text = "保存(&S)";
+			// 
+			// toolStripSeparator5
+			// 
+			this.toolStripSeparator5.Name = "toolStripSeparator5";
+			this.toolStripSeparator5.Size = new System.Drawing.Size(139, 6);
+			// 
+			// 导出到ExcelToolStripMenuItem
+			// 
+			this.导出到ExcelToolStripMenuItem.Name = "导出到ExcelToolStripMenuItem";
+			this.导出到ExcelToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+			this.导出到ExcelToolStripMenuItem.Text = "导出到Excel";
 			// 
 			// toolStripSeparator2
 			// 
 			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+			this.toolStripSeparator2.Size = new System.Drawing.Size(139, 6);
 			// 
 			// 退出XToolStripMenuItem
 			// 
 			this.退出XToolStripMenuItem.Name = "退出XToolStripMenuItem";
-			this.退出XToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.退出XToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
 			this.退出XToolStripMenuItem.Text = "关闭(&X)";
 			// 
 			// 编辑EToolStripMenuItem
@@ -515,17 +526,6 @@
 			this.toolStripStatusLabel2.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter;
 			this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
 			this.toolStripStatusLabel2.Size = new System.Drawing.Size(4, 22);
-			// 
-			// 导出到ExcelToolStripMenuItem
-			// 
-			this.导出到ExcelToolStripMenuItem.Name = "导出到ExcelToolStripMenuItem";
-			this.导出到ExcelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-			this.导出到ExcelToolStripMenuItem.Text = "导出到Excel";
-			// 
-			// toolStripSeparator5
-			// 
-			this.toolStripSeparator5.Name = "toolStripSeparator5";
-			this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
 			// 
 			// FormTaskList
 			// 

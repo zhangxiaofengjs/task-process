@@ -10,9 +10,9 @@ namespace xworks.taskprocess
 	{
 		public List<Task> LoadTasks(string filePath)
 		{
-			List<Task> Tasks = new List<Task>();
+			List<Task> tasks = new List<Task>();
 			//TODO
-			return new List<Task>();
+			return tasks;
 		}
 	}
 }
